@@ -76,7 +76,7 @@ Follow these steps on your server machine:
 
    ```sql
    -- characters DB
-   SOURCE "Sql & Serverside Files/SQL/Acore_characters/prestige.sql";
+   SOURCE "Sql & Serverside Files/SQL/01_prestige.sql";
    ```
 
    Creates tables to track prestige and draft state.
@@ -85,7 +85,7 @@ Follow these steps on your server machine:
 
    ```sql
    -- world DB
-   SOURCE "Sql & Serverside Files/SQL/acore_world/chromie_spawn.sql";
+   SOURCE "Sql & Serverside Files/SQL/02_chromie_spawn.sql";
    ```
 
    Registers NPC (entry 2069426) for a Chromie interface.
@@ -94,9 +94,9 @@ Follow these steps on your server machine:
 
    ```sql
    -- world DB
-   SOURCE "Sql & Serverside Files/SQL/acore_world/playercreateinfo_additions.sql";
-   SOURCE "Sql & Serverside Files/SQL/acore_world/playercreateinfo_action_additions.sql";
-   SOURCE "Sql & Serverside Files/SQL/acore_world/playercreateinfo_items_additions.sql";
+   SOURCE "Sql & Serverside Files/SQL/03_playercreateinfo_additions.sql";
+   SOURCE "Sql & Serverside Files/SQL/04_playercreateinfo_action_additions.sql";
+   SOURCE "Sql & Serverside Files/SQL/05_playercreateinfo_items_additions.sql";
    ```
 
    *These are **`INSERT IGNORE`** scripts—existing data is preserved.*
@@ -105,8 +105,8 @@ Follow these steps on your server machine:
 
    ```sql
    -- world DB
-   SOURCE "Sql & Serverside Files/SQL/acore_world/prestige_draft_specific_tables.sql";
-   SOURCE "Sql & Serverside Files/SQL/acore_world/Professions_Allow_Patch.sql";
+   SOURCE "Sql & Serverside Files/SQL/06_prestige_draft_specific_tables.sql";
+   SOURCE "Sql & Serverside Files/SQL/07_Professions_Allow_Patch.sql";
    ```
 
    Adds read-only tables used exclusively by the mod.
